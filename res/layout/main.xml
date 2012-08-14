@@ -1,15 +1,47 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="20dp" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:padding="@dimen/padding_medium"
-        android:text="@string/hello_world"
-        tools:context=".MoreAqui" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignLeft="@+id/btNew"
+		android:layout_alignParentTop="true"
+		android:layout_marginTop="80dp"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/app_name"
+		android:textSize="30dp"
+		tools:context=".MoreAqui" />
+
+	<Button
+		android:id="@+id/btNew"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/action_new" />
+
+	<Button
+		android:id="@+id/btSearch"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btNew"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/action_search" />
+
+	<Button
+		android:id="@+id/btMap"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btSearch"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/action_map" />
 
 </RelativeLayout>

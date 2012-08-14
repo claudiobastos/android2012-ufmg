@@ -1,8 +1,11 @@
 <resources>
 
-	<string name="app_name">MoreAqui</string>
+	<string name="app_name">More Aqui</string>
 	<string name="hello_world">Hello world!</string>
 	<string name="menu_settings">Settings</string>
 	<string name="title_activity_more_aqui">MoreAqui</string>
+	<string name="action_new">Novo</string>
+	<string name="action_search">Procurar</string>
+	<string name="action_map">Mapa</string>
 
 </resources>
