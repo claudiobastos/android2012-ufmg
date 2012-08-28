@@ -13,6 +13,13 @@ import android.widget.Toast;
 /**
  * Classe basica do programa.
  * @author Particular
+=======
+import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+/** MoreAqui.
  *
  */
 public class MoreAqui extends Activity implements OnClickListener {
