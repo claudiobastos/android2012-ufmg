@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView android:id="@+id/txtFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editFone"
+        tools:context=".InsertActivity" />
+
+    <EditText
+        android:id="@+id/editFone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text=""
+        android:layout_below="@id/txtFone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editFone" >
+
+        <RadioGroup
+            android:id="@+id/rdgSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             >
+
+            <RadioButton
+                android:id="@+id/rdSizeSmall"
+                android:text="@string/rdSizeSmall" />
+
+            <RadioButton
+                android:id="@+id/rdSizeMedium"
+                android:text="@string/rdSizeMedium" />
+
+            <RadioButton
+                android:id="@+id/rdSizeBig"
+                android:text="@string/rdSizeBig" />
+
+            <RadioButton
+                android:id="@+id/rdSizeUnknow"
+                android:text="@string/rdSizeUnknow" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rdgType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/rdgSize" 
+            android:layout_alignParentRight="true"
+             >
+
+            <RadioButton
+                android:id="@+id/rdTypeHouse"
+                android:text="@string/rdTypeHouse" />
+
+            <RadioButton
+                android:id="@+id/rdTypeApartment"
+                android:text="@string/rdTypeApartment" />
+
+            <RadioButton
+                android:id="@+id/rdTypeShop"
+                android:text="@string/rdTypeShop" />
+
+            <RadioButton
+                android:id="@+id/rdTypeUnknow"
+                android:text="@string/rdTypeUnknow" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/ckBuilding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rdgType" />
+
+    <CheckedTextView
+        android:id="@+id/ckBuildingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ckBuilding"
+        android:text="@string/ckBuildingText" />
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="48dp"
+        android:text="@string/btSave" />
+
+</RelativeLayout>

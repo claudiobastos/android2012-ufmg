@@ -1,11 +1,31 @@
 <resources>
 
-	<string name="app_name">More Aqui</string>
-	<string name="hello_world">Hello world!</string>
-	<string name="menu_settings">Settings</string>
-	<string name="title_activity_more_aqui">MoreAqui</string>
-	<string name="action_new">Novo</string>
-	<string name="action_search">Procurar</string>
-	<string name="action_map">Mapa</string>
+    <string name="app_name">More Aqui</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_more_aqui">MoreAqui</string>
+    <string name="action_new">Novo</string>
+    <string name="action_search">Procurar</string>
+    <string name="action_map">Mapa</string>
+    <string name="title_activity_insert">InsertActivity</string>
 
+    <string name="error_invalid_number">Número de telefone possui formato inválido!</string>
+    
+    <string name="editFone">Fone:</string>
+    
+    <string name="rdgSize">Tamanho:</string>
+    <string name="rdSizeSmall">Pequeno</string>
+    <string name="rdSizeMedium">Medio</string>
+    <string name="rdSizeBig">Grande</string>
+    <string name="rdSizeUnknow">Não sei</string>
+
+    <string name="rdgType">Tipo:</string>
+    <string name="rdTypeHouse">Casa</string>
+    <string name="rdTypeApartment">Apartamento</string>
+    <string name="rdTypeShop">Loja</string>
+    <string name="rdTypeUnknow">Não sei</string>
+
+    <string name="ckBuildingText">Em construção</string>
+    
+    <string name="btSave">Pronto</string>
 </resources>
