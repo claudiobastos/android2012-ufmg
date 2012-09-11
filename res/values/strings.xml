@@ -4,8 +4,9 @@
 	<string name="menu_settings">Settings</string>
 	<string name="title_activity_more_aqui">MoreAqui</string>
 	<string name="action_new">Novo</string>
-	<string name="action_search">Procurar</string>
+	<string name="action_search">Visualizar</string>
 	<string name="action_map">Mapa</string>
+	<string name="action_save">Gravar</string>
     <string name="title_activity_insert">Novo imóvel</string>
 	
     <string name="error_invalid_number">Número de telefone possui formato inválido!</string>
@@ -27,4 +28,18 @@
     <string name="ckBuildingText">Em construção</string>
     
     <string name="btSave">Pronto</string>
+    <string name="empty"></string>
+    <string name="newLine">\n</string>
+    
+
+    <string name="client_name">DaoClient</string>
+    <string name="read">R</string>
+    <string name="write">W</string>
+    <string name="lblResults">Nome e Nota:</string>
+    <string name="get">G</string>
+    <string name="add">A</string>
+    <string name="upd">U</string>
+    <string name="del">D</string>
+    <string name="cln">C</string>
+    <string name="siz">S</string>
 </resources>

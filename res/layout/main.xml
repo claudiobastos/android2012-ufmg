@@ -43,5 +43,13 @@
 		android:layout_centerVertical="true"
 		android:padding="@dimen/padding_medium"
 		android:text="@string/action_map" />
-
+	<Button
+		android:id="@+id/btSave"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/btMap"
+		android:layout_centerHorizontal="true"
+		android:layout_centerVertical="true"
+		android:padding="@dimen/padding_medium"
+		android:text="@string/action_save" />
 </RelativeLayout>

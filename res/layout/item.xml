@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?> 
+  <RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:orientation="horizontal" 
+    android:padding="10sp"> 
+  <TextView
+    android:id="@+id/rowid" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" /> 
+  <TextView 
+    android:id="@+id/rowidcolon" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text=": "
+    android:layout_toRightOf="@id/rowid" /> 
+  <TextView
+    android:id="@+id/type" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/rowidcolon" /> 
+  <TextView 
+    android:id="@+id/typecolon" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text=": " 
+    android:layout_toRightOf="@id/type" />
+  <TextView 
+    android:id="@+id/size" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/typecolon" />
+  <TextView 
+    android:id="@+id/sizecolon" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text=": " 
+    android:layout_toRightOf="@id/size" />
+  <TextView 
+    android:text="Telefone"
+    android:id="@+id/phone" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:layout_toRightOf="@id/sizecolon" />
+   <TextView 
+    android:id="@+id/phonecolon" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text=": " 
+    android:layout_toRightOf="@id/phone" />  
+  <TextView 
+    android:id="@+id/status" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:ellipsize="end" 
+    android:singleLine="true" 
+    android:textStyle="italic" 
+    android:layout_toRightOf="@id/phonecolon" /> 
+</RelativeLayout>

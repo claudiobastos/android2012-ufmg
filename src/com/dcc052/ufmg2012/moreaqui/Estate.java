@@ -1,4 +1,6 @@
 package com.dcc052.ufmg2012.moreaqui;
+import java.lang.*;
+import java.io.Serializable;
 
 /**
  * This class describes a real estate.
@@ -6,9 +8,7 @@ package com.dcc052.ufmg2012.moreaqui;
  * @author fernando
  *
  */
-public class Estate {
-  /** The serial version of this class. */
-  private static final long serialVersionUID = 1734003038366261208L;
+public class Estate implements Serializable {
 
   /** The type of the state is not known. */
   public static final int UNKNOWN_TYPE = 0;
@@ -58,8 +58,7 @@ public class Estate {
    * @param inConstruction
    *        true if the estate is still under construction.
    */
-  public Estate(final String type, final String size, final int phone,
-      final String inConstruction) {
+  public Estate(final String type, final String size, final int phone, final String inConstruction) {
     this.TYPE = type;
     this.SIZE = size;
     this.PHONE = phone;

@@ -42,10 +42,12 @@ public class MoreAqui extends Activity implements OnClickListener {
         Button btNew = (Button) findViewById(R.id.btNew);
         Button btSearch = (Button) findViewById(R.id.btSearch);
         Button btMap = (Button) findViewById(R.id.btMap);
+        Button btSave = (Button) findViewById(R.id.btSave);
 
         btNew.setOnClickListener(this);
         btSearch.setOnClickListener(this);
         btMap.setOnClickListener(this);
+        btSave.setOnClickListener(this);
 
     }
 
@@ -61,28 +63,16 @@ public class MoreAqui extends Activity implements OnClickListener {
             Intent i = new Intent(this, InsertActivity.class);
             startActivityForResult(i, mCodeNewState);
             break;
-        case R.id.btSearch: break;
-        case R.id.btMap: break;
-        default:
-            break;
-        }
-    }
-
-    /**
-     * @param requestCode auxilia determinar qual operação está retornando
-     * @param resultCode resultado da operação da atividade
-     * @param data Intent com os valores passados pela atividade anterior
-     */
-    @Override
-    protected final void onActivityResult(final int requestCode,
-        final int resultCode, final Intent data) {
-        //super.onActivityResult(requestCode, resultCode, data);
-        switch(requestCode) {
-        case mCodeNewState:
-            Estate e = (Estate) data.getSerializableExtra("estate");
-            Log.w("New", e.toString());
-            Toast.makeText(this, "New instance", Toast.LENGTH_SHORT).show();
-            break;
+        case R.id.btSearch: 
+        	Intent j = new Intent(this, EstateListActivity.class);
+        	startActivityForResult(j, mCodeNewState);
+        	break;
+        case R.id.btSave: 
+        	Intent k = new Intent(this, Client.class);
+        	startActivityForResult(k, mCodeNewState);
+        	break;
+        case R.id.btMap: 
+        	break;
         default:
             break;
         }
